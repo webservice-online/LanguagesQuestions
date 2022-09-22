@@ -1,0 +1,376 @@
+[
+
+{ question: "Kotlin interfaces and abstract classes are very similar. What is one thing abstract class can do that interfaces cannot?",
+
+topic_one: "Only abstract classes can store state",
+topic_two: "Only abstract classes are inheritable by subclasses",
+topic_three: "Only abstract classes can inherit from multiple superclasses",
+topic_four: "Only abstract classes can have abstract methods",
+
+[reference](https://blog.kotlin-academy.com/abstract-class-vs-interface-in-kotlin-5ab8697c3a14)
+},
+
+{ question: "Inside an extension function, what is the name of the variable that corresponds to the receiver object",
+
+topic_one: "The variable is named **this**",
+topic_two: "The variable is named **it**",
+topic_three: "The variable is named **receiver**",
+topic_four: "The variable is named **default**",
+
+[reference](https://www.programiz.com/kotlin-programming/extension-functions#:~:text=The%20class%20name%20is%20the,function%20refers%20the%20receiver%20object)
+
+},
+
+{ question: "What is the entry point for a Kotlin application?",
+
+topic_one: "`fun main(){}`",
+topic_two: "`fun static main(){}`",
+topic_three: "`fun Main(){}`",
+topic_four: "`public static void main(){}`",
+
+},
+
+{ question: "You are writing a console app in Kotlin that processes test entered by the user. If the user enters an empty string, the program exits. Which kind of loop would work best for this app? Keep in mind that the loop is entered at least once",
+
+topic_one: "a do..while loop",
+topic_two: "a for loop",
+topic_three: "a while loop",
+topic_four: "a forEach loop",
+
+[reference](https://kotlinlang.org/docs/control-flow.html#while-loops)
+},
+
+{ question: "You are attempting to assign an integer variable to a long variable, but Kotlin compiler flags it as an error. Why?",
+
+topic_one: "There is no implicit conversion from `Int` to `Long`",
+topic_two: "You must wrap all implicit conversion in a try/catch block",
+topic_three: "You can only assign `Long` to an `Int`, not the other way around",
+topic_four: "All integers in Kotlin are of type `Long`",
+
+[reference](https://kotlinlang.org/docs/basic-types.html#explicit-conversions)
+},
+
+
+{ question: "The function **typeChecker** receives a parameter **obj** of type **Any**. Based upon the type of **obj**, it prints different messages for Int, String, Double, and Float types; if not any of the mentioned types, it prints 'unknown type'. What operator allows you to determine the type of an object?",
+
+topic_one: "`is`",
+topic_two: "`instanceof`",
+topic_three: "`typeof`",
+topic_four: "`as`",
+
+[reference](https://kotlinlang.org/docs/typecasts.html#is-and-is-operators)
+},
+
+{ question: "Which line of code shows how to display a nullable string's length and shows 0 instead of null?",
+
+topic_one: "`println(b?.length ?: 0)`",
+topic_two: "`println(b!!.length ?: 0)`",
+topic_three: "`println(b?.length ?? 0)`",
+topic_four: "`println(b == null? 0: b.length)`",
+},
+
+
+{ question: "Which code snippet correctly shows a for loop using a range to display '1 2 3 4 5 6'?",
+
+topic_one: "`for(z in 1..6) print("$z ")`",
+topic_two: "`for(z in 1..7) println("$z ")`",
+topic_three: "`for(z in 1 to 6) print("$z ")`",
+topic_four: "`for(z in 1..7) print("$z ")`",
+
+[reference](https://kotlinlang.org/docs/ranges.html)
+},
+{ question: "You are upgrading a Java class to Kotlin. What should you use to replace the Java class's static fields?",
+
+topic_one: "a companion object",
+topic_two: "an anonymous object",
+topic_three: "a static property",
+topic_four: "a backing field",
+
+[reference](https://kotlinlang.org/docs/object-declarations.html#companion-objects)
+},
+{ question: "Your code need to try casting an object. If the cast is not possible, you do not want an exception generated, instead you want null to be assigned. Which operator can safely cast a value?",
+
+topic_one: "`as?`",
+topic_two: "`??`",
+topic_three: "`is`",
+topic_four: "`as`",
+
+[reference](https://kotlinlang.org/docs/typecasts.html#safe-nullable-cast-operator)
+},
+
+
+{ question: "Which function changes the value of the element at the current iterator location?",
+
+topic_one: "`set()`",
+topic_two: "`change()`",
+topic_three: "`modify()`",
+topic_four: "`assign()`",
+
+[reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list-iterator/set.html)
+},
+
+{ question: "Which is the proper way to declare a singleton named DatabaseManager?",
+
+topic_one: "`object DatabaseManager {}`",
+topic_two: "`singleton DatabaseManager {}`",
+topic_three: "`static class DatabaseManager {}`",
+topic_four: "`data class DatabaseManager {}`",
+
+[reference](https://kotlinlang.org/docs/object-declarations.html#object-declarations)
+},
+
+{ question: "Your function is passed by a parameter obj of type Any. Which code snippet shows a way to retrieve the original type of obj, including package information?",
+
+topic_one: "`obj::class`",
+topic_two: "`obj.classInfo()`",
+topic_three: "`obj.typeInfo()`",
+topic_four: "`obj::class.simpleName`",
+
+[reference](https://kotlinlang.org/docs/reflection.html#class-references)
+},
+{ question: "Which is the correct declaration of an integer array with a size of 5?",
+
+topic_one: "`val arrs = IntArray(5)`",
+topic_two: "`val arrs[5]: Int`",
+topic_three: "`val arrs: Int[5]`",
+topic_four: "`val arrs = Array<Int>(5)`",
+
+[reference](https://kotlinlang.org/docs/basic-types.html#primitive-type-arrays)
+},
+{ question: "You have created a class that should be visible only to the other code in its module. Which modifier do you use?",
+
+topic_one: "`internal`",
+topic_two: "`private`",
+topic_three: "`public`",
+topic_four: "`protected`",
+
+[reference](https://kotlinlang.org/docs/visibility-modifiers.html#classes-and-interfaces)
+},
+{ question: "Kotlin has two equality operators, == and ===. What is the difference?",
+
+topic_one: "`==` determines if two objects have the same value. `===` determines if two references point to the same object",
+topic_two: "`==` determines if two primitive types are identical. `===` determines if two objects are identical",
+topic_three: "`==` determines if two references point to the same object. `===` determines if two objects have the same value",
+topic_four: "`==` determines if two objects have the same value. `===` determines if two strings have the same value",
+
+[reference](https://kotlinlang.org/docs/equality.html#structural-equality)
+},
+{ question: "Which snippet correctly shows setting the variable max to whichever variable holds the greatest value, a or b, using idiomatic Kotlin?",
+
+topic_one: "`val max3 = a.max(b)` (Extension Function is One of the idiomatic Solutions in Kotlin)",
+topic_two: "`val max = a > b ? a : b`",
+topic_three: "`val max = if (a > b) a else b`",
+topic_four: "`if (a > b) max = a else max = b`",
+},
+{ question: "You would like to know each time a class property is updated. Which code snippet shows a built-in delegated property that can accomplish this?",
+
+topic_one: "`Delegates.observable()`",
+topic_two: "`Delegates.watcher()`",
+topic_three: "`Delegates.rx()`",
+topic_four: "`Delegates.observer()`",
+
+[reference](https://kotlinlang.org/docs/delegated-properties.html#observable-properties)
+},
+{ question: "What is the correct way to initialize a nullable variable?",
+
+topic_one: "`val name: String? = null`",
+topic_two: "`val name = null`",
+topic_three: "`var name: String`",
+topic_four: "`val name: String`",
+
+},
+{ question: "The Kotlin .. operator can be written as which function?",
+
+topic_one: "`a.rangeTo(b)`",
+topic_two: "`a.from(b)`",
+topic_three: "`a.range(b)`",
+topic_four: "`a.to(b)`",
+
+[reference](https://kotlinlang.org/docs/ranges.html)
+
+},
+
+{ question: "Your class has a property name that gets assigned later. You do not want it to be a nullable type. Using a delegate, how should you declare it?",
+
+topic_one: "`var name: String by Delegates.notNull()`",
+topic_two: "`lateinit var name: String` // lateinit is modifier not delegate",
+topic_three: "`var name: String by lazy`",
+topic_four: "`var name: String? = null`",
+},
+{ question: "You want to know each time a class property is updated. If the new value is not within range, you want to stop the update. Which code snippet shows a built-in delegated property that can accomplish this?",
+
+topic_one: "`Delegates.vetoable()`",
+topic_two: "`Delegates.cancellable()`",
+topic_three: "`Delegates.observer()`",
+topic_four: "`Delegates.watcher()`",
+},
+{ question: "Which line of code shows how to call a Fibonacci function, bypass the first three elements, grab the next six, and sort the elements in descending order?",
+
+topic_one: "`val sorted = fibonacci().drop(3).take(6).sortedDescending().toList()`",
+topic_two: "`val sorted = fibonacci().skip(3).take(6).sortedDescending().toList()`",
+topic_three: "`val sorted = fibonacci().skip(3).take(6).sortedByDescending().toList()`",
+topic_four: "`val sorted = fibonacci().skip(3).limit(6).sortedByDescending().toList()`",
+
+[reference](https://kotlinlang.org/docs/collection-parts.html#take-and-drop)
+},
+
+
+{ question: "What is the execution order of init blocks and properties during initialization?",
+
+topic_one: "The init blocks and properties are executed in the same order they appear in the code.",
+topic_two: "All of the properties are executed in order of appearance, and then the init blocks are executed.",
+topic_three: "All of the init blocks are executed in order of appearance, and then the properties are executed.",
+topic_four: "The order of execution is not guaranteed, so code should be written accordingly.",
+
+[reference](https://kotlinlang.org/docs/classes.html#constructors)
+},
+
+
+{ question: "What are the two ways to make a coroutine's computation code cancellable?",
+
+topic_one: "Call the `yield()` function or check the `isActive` property.",
+topic_two: "Call the `cancelled()` function or check the `isActive` property.",
+topic_three: "Call the `stillActive()` function or check the `isCancelled` property.",
+topic_four: "Call the `checkCancelled()` function or check the `isCancelled` property.",
+
+[reference](https://kotlinlang.org/docs/cancellation-and-timeouts.html#timeout)
+},
+
+{ question: "Which statement declares a variable mileage whose value never changes and is inferred to be an integer?",
+  
+topic_one: "`val mileage = 566` (Note: inferred)",
+topic_two: "`val mileage:Int = 566`",
+topic_three: "`var mileage:Int = 566`",
+topic_four: "`const int mileage = 566`",
+},
+{ question: "What is the preferred way to create an immutable variable of type long?",
+
+topic_one: "`val longInt = 10L`",
+topic_two: "`var longInt = 10L`",
+topic_three: "`const long longInt = 10`",
+topic_four: "`val longInt:Long = 10`",
+},
+
+
+{ question: "In a Kotlin program, which lines can be marked with a label",
+
+topic_one: "`Any expression can be marked with a label`",
+topic_two: "`Any program line can be marked with a label`",
+topic_three: "`Any statement can be marked with a label`",
+topic_four: "`Only the beginning of loops can be marked with a label`",
+
+1. [article](https://agrawalsuneet.github.io/blogs/label-reference-in-kotlin/) -
+2. [reference](https://kotlinlang.org/docs/returns.html#return-to-labels)
+
+},
+
+{ question: "All classes in Kotlin inherit from which superclass?",
+
+topic_one: "`Any`",
+topic_two: "`Default`",
+topic_three: "`Super`",
+topic_four: "`Object`",
+
+[reference](https://kotlinlang.org/docs/inheritance.html)
+},
+
+
+{ question: "Kotlin classes are final by default. What does final mean?",
+
+topic_one: "final means that you cannot extend the class.",
+topic_two: "final means that you cannot use interfaces with this class.",
+topic_three: "final means that this is the only file that can use the class.",
+topic_four: "final classes cannot be used in the finally section of a try/catch block.",
+
+[reference](https://kotlinlang.org/docs/inheritance.html)
+},
+
+
+{ question: "If a class has one or more secondary constructors, what must each of them do?",
+
+topic_one: "Each secondary constructor must directly or indirectly delegate to the primary.",
+topic_two: "Each secondary constructor must call super().",
+topic_three: "Each secondary constructor must call base().",
+topic_four: "Each secondary constructor must have the same name as the class.",
+
+[reference](https://kotlinlang.org/docs/classes.html#secondary-constructors)
+},
+{ question: "When you can omit constructor keyword from the primary constructor?",
+
+topic_one: "It can be omitted when the primary constructor does not have any modifiers or annotations.",
+topic_two: "It can be omitted only if an init block is defined.",
+topic_three: "It can be omitted anytime; it is not mandatory.",
+topic_four: "It can be omitted if secondary constructors are defined.",
+
+[article](https://www.baeldung.com/kotlin/constructors#:~:text=In%20some%20cases%2C%20we%20can,default%20parameters%20in%20the%20constructors.) - [reference](https://kotlinlang.org/docs/classes.html#constructors)
+},
+{ question: "How many different kinds of constructors are available for kotlin classes?",
+
+topic_one: "two.",
+topic_two: "none.",
+topic_three: "four.",
+topic_four: "one.",
+
+[reference](https://www.programiz.com/kotlin-programming/constructors#:~:text=In%20Kotlin%2C%20there%20are%20two,to%20put%20additional%20initialization%20logic)
+},
+{ question: "What is the default visibility modifier in Kotlin?",
+
+topic_one: "public",
+topic_two: "protected",
+topic_three: "private",
+topic_four: "internal",
+
+[reference](https://kotlinlang.org/docs/visibility-modifiers.html)
+},
+
+
+{ question: "You have enum class Signal that represent state of network connection. You want to iterate over each the member of the enum. Which line of code shows how to do that `?",
+
+topic_one: "Signal.values().",
+topic_two: "Signal.sequence().",
+topic_three: "Signal.toArray().",
+topic_four: "Signal.toList().",
+
+[reference](https://kotlinlang.org/docs/enum-classes.html#working-with-enum-constants)
+},
+{ question: "You'd like to create multiline string that includes the carriage return characther. What should you use to enclose the string?",
+
+topic_one: "Tripple quote(""").",
+topic_two: "Double quotes("").",
+topic_three: "Single quotes(').",
+topic_four: "Backticks().",
+
+[reference](https://kotlinlang.org/docs/coding-conventions.html#strings)
+},
+
+
+
+{ question: "You want your class member to be visible to subclasses. Which modifier do you use?",
+
+topic_one: "Protected.",
+topic_two: "Public.",
+topic_three: "Internal.",
+topic_four: "Private.",
+
+[reference](https://kotlinlang.org/docs/visibility-modifiers.html#class-members)
+},
+{ question: "which line of code shows how to create a finite sequence of the numbers 1 to 99 and then convert it into a list?",
+
+topic_one: "val lessThan99 = generateSequence(1){ if (it < 99) it + 1 else null }.toList().",
+topic_two: "val lessThan99 = generateSequence(0){ if (it < 99)}.toList().",
+topic_three: "val lessThan99 = generateSequence(1..9){ if (it < 99) it + 1 else null }.toList().",
+topic_four: "val lessThan99 = listOf{1..99}.asSequence().toList()",
+
+[reference](https://kotlinlang.org/docs/sequences.html#from-a-function)
+},
+{ question: "What is wrong with this class definition?",
+
+topic_one: "The class is properly defined, so nothing is wrong with it.",
+topic_two: "The parentheses are missing-it should be declared as class Empty().",
+topic_three: "Empty is a Kotlin keyword, so the code will generate an error when compiled.",
+topic_four: "The curely braces are missing from the declaration of Empty.",
+
+[reference](https://kotlinlang.org/docs/classes.html)
+}
+
+]
